@@ -1,0 +1,23 @@
+
+Oubella YASSINE
+
+Mon programme représente le jeu du snake qui ce déplace sur une grille ou est présent un fruit qui est représente par une case rouge.
+Lorsque la tête de ce serpent ce trouve sur le fruit le serpent grandit de façon aléatoire en prenant une section de couleur différentes.
+Le jeu s'arrête lorsque la tête du serpent percute les bords de la grille ou si ça tête ce retrouve dans une position ou ce retrouve déjà une section donc sont corp.
+
+
+Le programme est organisé en six paires de fichiers, chacune comprenant un fichier avec l'extension .h pour les déclarations de structures et de fonctions, et un autre avec l'extension .c pour la mise en œuvre des fonctions.
+
+Dans les fichiers Grille, on trouve les fonctions de manipulation de la grille, à l'exception de Grille_Remplir, située dans les fichiers Serpent en raison d'un problème d'inclusion de fichiers.
+
+Les fichiers Liste_Section contiennent uniquement les fonctions pour la création, la désallocation et le choix aléatoire d'une couleur parmi sept pour les sections du serpent.
+
+Les fichiers Serpent englobent les fonctions pour manipuler la liste chaînée représentant le serpent, ainsi que la définition des maillons.
+
+Dans les fichiers Liste_Mouvement, on trouve les fonctions pour manipuler une liste chaînée Liste_Mouvement, constituée de maillons de mouvement contenant des coordonnées (x, y) pour définir les mouvements du serpent.
+
+Les fichiers Fonctions_Jeu regroupent tout ce qui concerne l'exécution du jeu, l'affichage sur le terminal et les règles du jeu. La fonction "bouger_serpent" doit être appelée dans le main avec une grille, un serpent et une matrice préalablement créés.
+
+Les fichiers Matrice ont pour objectif de représenter la grille du jeu sous forme d'un tableau à double dimension, contenant toutes les informations de la grille sous forme d'énumérations.
+
+Chaque fonction est accompagnée d'une brève explication dans les fichiers .h du programme.
